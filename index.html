@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - My Personal Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <header>
+        <div class="logo">
+            <img src="./img/logo.png" alt="Logo" />
+        </div>
+
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="bi bi-list"></i>
+        </div>
+
+        <nav class="nav-menu" id="nav-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="icons">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero home">
+        <div class="container">
+            <div class="hero_text">
+                <h3>Crafting Digital Experiences with Passion</h3>
+                <p>Transforming ideas into elegant solutions through creative design and innovative development</p>
+                <button onclick="window.location='#portfolio'">View My Work</button>
+                <button onclick="window.location='#contact'">Let's Connect</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about_us">
+        <div class="container">
+            <div class="about_header">
+                <h4>About Us</h4>
+                <p>
+                    Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
+                    consequatur vel illum qui dolorem.
+                </p>
+            </div>
+            <div class="about_flex">
+                <div class="about_text">
+                    <p>About Me</p>
+                    <h5>UI/UX Designer & Web Developer</h5>
+                    <p>
+                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                        consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                    </p>
+                    <div class="about_details">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Name:</strong></td>
+                                    <td>Daniel Sunday</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Phone:</strong></td>
+                                    <td>+234 7045 769 021</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Age:</strong></td>
+                                    <td>20 Years</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Email:</strong></td>
+                                    <td>daniboyloyal@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Occupation:</strong></td>
+                                    <td>Web Developer</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Nationality:</strong></td>
+                                    <td>Nigeria</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="about_img">
+                    <img src="./img/profile-square-2.webp" alt="Daniel Sunday's profile photo" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <h2>Portfolio</h2>
+        <p>A collection of some of my favorite works in web design, graphics, and branding.</p>
+        <div class="portfolio_title">
+            <span><a href="#" data-filter="all">All Work</a></span>
+            <span><a href="#" data-filter="web design">Web Design</a></span>
+            <span><a href="#" data-filter="graphics">Graphics</a></span>
+            <span><a href="#" data-filter="branding">Branding</a></span>
+        </div>
+        <div class="portfolio_img_items">
+            <div class="portfolio_content" data-category="web design">
+                <img src="./img/portfolio1.png" alt="Web Design Project A">
+                <div>
+                    <p><strong>Name:</strong> Project A</p>
+                    <p><strong>Project:</strong> Web Design</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <button><a href="#">Download Project</a></button>
+                    <button><a href="#">View Project</a></button>
+                </div>
+            </div>
+            <div class="portfolio_content" data-category="graphics">
+                <img src="./img/portfolio2.jpeg" alt="Graphics Project B">
+                <div>
+                    <p><strong>Name:</strong> Project B</p>
+                    <p><strong>Project:</strong> Graphics</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <button><a href="#">Download Project</a></button>
+                    <button><a href="#">View Project</a></button>
+                </div>
+            </div>
+            <div class="portfolio_content" data-category="branding">
+                <img src="./img/portfolio3.jpg" alt="Branding Project C">
+                <div>
+                    <p><strong>Name:</strong> Project C</p>
+                    <p><strong>Project:</strong> Branding</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <button><a href="#">Download Project</a></button>
+                    <button><a href="#">View Project</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out for collaborations or just a friendly hello 👋</p>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
